@@ -15,7 +15,7 @@ const themeVars = {
   tabbarItemActiveColor: '--van-text-color',
 }
 const { refreshFlag, handleRefreshApp } = useApp()
-// 大小方向改变，重新刷新
+// Change the size and direction, refresh
 useWinResize(handleRefreshApp)
 </script>
 <style lang="less" scoped></style>
