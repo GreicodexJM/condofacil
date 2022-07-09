@@ -12,7 +12,7 @@ import 'default-passive-events' // use passive
 import 'https://at.alicdn.com/t/font_3307242_pc2kc54o5oc.js'
 import directives from './directives' // global directive
 // Import the functions you need from the SDKs you need
-import firebase from "firebase";
+import firebase from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,8 +30,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebase);
+const fire=firebase.initializeApp(firebaseConfig);
+const analytics = getAnalytics(fire);
 
 const pinia = createPinia()
 const app = createApp(App)

@@ -11,7 +11,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    // 项目插件
+    // Project plugin
     plugins: [
       vue(),
       vueJsx(),
@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
       }),
       vitePublish(),
     ],
-    // 基础配置
+    // Basic configuration
     base: mode === 'production' ? 'https://cdn200.oss-cn-hangzhou.aliyuncs.com/next-mobile/' : '/',
     publicDir: 'public',
     resolve: {
@@ -42,7 +42,7 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, 'src'),
       },
     },
-    // 服务配置
+    // Service configuration
     server: {
       port: 9527,
       https: false,
@@ -72,7 +72,7 @@ export default defineConfig(({ mode }) => {
       sourcemap: false,
       terserOptions: {
         compress: {
-          // 生产环境去除console及debug
+          // Remove console and debug from production environment
           drop_console: true,
           drop_debugger: true,
         },

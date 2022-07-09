@@ -11,9 +11,9 @@ module.exports = {
     defineEmits: 'readonly',
   },
   rules: {
-    // 自己写一些想配置的规则
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 生产环境禁用consele
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 生产环境禁用debugger
+    // Write some rules you want to configure yourself
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // Disable console in production environment
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // Disable debugger in production environment
     'no-unused-vars': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-multiple-empty-lines': 'off',
     'space-before-function-paren': 'off',

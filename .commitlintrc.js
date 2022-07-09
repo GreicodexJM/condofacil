@@ -6,17 +6,17 @@ module.exports = {
       2,
       'always',
       [
-        'docs', //  仅仅修改了文档等
-        'feat', // A新增feature
-        'fix', // 修复bug
-        'style', // 仅仅修改ui样式等，不改变代码逻辑
-        'perf', // 优化相关，比如提升性能、体验
-        'refactor', // 代码重构，没有加新功能或者修复bug
-        'revert', // 回滚到上一个版本
-        'test', // 测试用例，包括单元测试、集成测试等
-        'build', // 构建
-        'ci', // ci配置，脚本文件等更新
-        'chore', // 改变构建流程、或者增加依赖库、工具等
+        'docs', //  Just modified the documentation etc.
+        'feat', // A Add feature
+        'fix', // fix bugs
+        'style', // Only modify the ui style, etc., without changing the code logic
+        'perf', // Optimization related, such as improving performance, experience
+        'refactor', // Code refactoring, no new features or bug fixes
+        'revert', // rollback to previous version
+        'test', // Test cases, including unit tests, integration tests, etc.
+        'build', // Construct
+        'ci', // Updates to ci configuration, script files, etc.
+        'chore', // Change the build process, or add dependent libraries, tools, etc.
       ],
     ],
   },
